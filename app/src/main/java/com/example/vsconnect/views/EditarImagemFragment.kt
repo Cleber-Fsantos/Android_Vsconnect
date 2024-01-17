@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.vsconnect.databinding.FragmentHomeBinding
+import com.example.vsconnect.databinding.FragmentEditarImagemBinding
 
 class EditarImagemFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentEditarImagemBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -21,7 +21,7 @@ class EditarImagemFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentEditarImagemBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root
