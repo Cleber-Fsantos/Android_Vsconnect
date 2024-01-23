@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".views.ListaServicosFragment"
-        android:background="@color/azul_marinho_fundo_menu"
+        android:background="@color/azul_marinho"
         android:paddingRight="20dp"
         android:paddingLeft="20dp"
 
@@ -32,5 +32,8 @@
             android:layout_height="match_parent"
             app:layout_constraintTop_toBottomOf="@+id/titulo_lista_servicos"
             android:layout_marginTop="80dp" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/recyclerServicos"
+            tools:listitem="@layout/fragment_servico"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

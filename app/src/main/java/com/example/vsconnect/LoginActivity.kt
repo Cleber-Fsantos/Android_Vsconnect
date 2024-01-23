@@ -23,6 +23,6 @@ class LoginActivity : AppCompatActivity() {
 
             finish()
         }
-        //setContentView(binding.root)
+        setContentView(binding.root)
     }
 }
