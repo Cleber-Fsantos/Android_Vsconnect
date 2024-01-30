@@ -8,14 +8,14 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.vsconnect.adapters.ListaServicoAdapter
 import com.example.vsconnect.apis.EndpointInterface
-import com.example.vsconnect.apis.retrofitConfig
+import com.example.vsconnect.apis.RetrofitConfig
 import com.example.vsconnect.databinding.FragmentListaServicosBinding
 import com.example.vsconnect.models.Servico
 import retrofit2.*
 
 class ListaServicosFragment : Fragment() {
 
-    private val clienteRetrofit = retrofitConfig.obterInstanciaRetrofit()
+    private val clienteRetrofit = RetrofitConfig.obterInstanciaRetrofit()
 
     private val endpoints = clienteRetrofit.create(EndpointInterface::class.java)
 
